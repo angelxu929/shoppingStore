@@ -1,0 +1,550 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a{color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6{text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1200px;
+    margin: 0 auto;
+}
+/*头部开始*/
+.header{
+    height: 32px;
+    line-height: 32px;
+    background-color: #F4F3F3;
+    border: 2px solid #D8D8D8;
+    font: 12px/32px "samsun";
+}
+.header .fl{
+    width:600px;
+    float: left;
+}
+.header .fl span{
+    font-weight: 700;
+}
+.header .fl span a{
+    text-decoration: none;
+    color:#000;
+}
+.header .rt{
+    /*width: 450px;*/
+    height: 32px;
+    float: right;
+    /* margin-right:90px ;*/
+}
+.header .rt ul{
+    list-style: none;
+    position: relative;
+}
+.header .rt ul li{
+    float: left;
+    font: 14px/32px "microsoft yahei";
+    width: 85px;
+    text-align: center;
+    padding:0 10px 0 5px;
+    position: relative;
+}
+.header .rt ul li span{
+    color:#D0D0D0;
+    height:16px;
+    margin-left: 20px;
+}
+.header .tel{
+    display: block;
+    width: 10px;
+    height: 15px;
+    background:url(../images/icon.png) no-repeat top left;
+    position: absolute;
+    top:8px;
+    left: -22px;
+}
+.header .rt i{
+    font:400 13px/15px "samsun";
+    height: 7px;
+    position: absolute;
+    top: 14px;
+    right: 22px;
+    width: 15px;
+    overflow: hidden;
+}
+.header .rt i s{
+    font-style: normal;
+    text-decoration: none;
+    position: absolute;
+    top:-6px;
+    right: 0px;
+}
+#goTop{
+    position: fixed;
+    right:15px;
+    bottom:30px;
+    display: none;
+}
+.box{
+    width: 1200px;
+    height: 100px;
+}
+.logo {
+    width: 345px;
+    height: 56px;
+    float:left;
+    padding: 20px 0;
+    position: relative;;
+    background:url(../images/login_l.jpg) no-repeat 0 20px;
+}
+.logo .line{
+    display: block;
+    width: 2px;
+    height: 45px;
+    background-color:#7BBE3D;
+    /* margin:0 15px;*/
+    position: absolute;
+    top:20px;
+    left:175px;
+}
+.logo img{
+    position: absolute;
+    top:20px;
+    left: 200px;
+}
+.search{
+                    width: 488px;
+                    height: 39px;
+                    float: left;
+                    border: 2px solid #E40077;
+                    margin-top: 20px;
+                    position: relative;
+                }
+.search input{
+    width: 330px;
+    height: 39px;
+    float: left;
+    padding-left: 28px;
+    color:#ccc;
+}
+.search span{
+    display: block;
+    width: 22px;
+    height: 21px;
+    background: url(../images/icon.png) no-repeat -19px top;
+    position: absolute;
+    top:12px;
+    left:5px;
+}
+.search button{
+    height: 39px;
+    width: 130px;
+    background-color:#E40077;
+    color: #fff;
+    font:20px/38px "microsoft yahei";
+    float: left;
+    cursor: pointer;
+}
+.car {
+    float: left;
+    margin: 20px 0 0 21px;
+    width: 147px;
+    height: 39px;
+    line-height: 39px;
+    border: 1px solid #E5E5E5;
+    background-color: #F8F8FA;
+    font: 16px/39px "microsoft yahei";
+    position: relative;
+}
+.car a{
+    margin-left:35px ;
+}
+.car .icon_l{
+    display: block;
+    width: 22px;
+    height: 19px;
+    background: url(../images/icon.png) no-repeat -19px -29px;
+    position: absolute;
+    top:8px;
+    left: 8px;
+}
+.car .icon_r{
+    width: 18px;
+    height: 19px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #E40077;
+    display: block;
+    position: absolute;
+    top:10px;
+    right:38px;
+    color:#fff;
+}
+.car .icon_3{
+    font: 400 15px/15px simsun;
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    opacity: 0.5;
+}
+.hotsearch{
+    width: 511px;
+    height: 35px;
+    float: left;
+    font:12px/35px "microsoft yahei";
+}
+.hotsearch a{
+    margin-right: 9px;
+}
+.hotsearch .hot{
+    color:#E40077 ;
+}
+.bannerTop{
+    border-bottom: 2px solid #E40077;
+}
+.bannerTop_l{
+    width: 225px;
+    height: 42px;
+    line-height: 42px;
+    color:#fff;
+    background-color:#E40077;
+    text-align: center;
+    float: left;
+}
+.bannerTop_r{
+    width: 832px;
+    height: 42px;
+    float: left;
+}
+.bannerTop_r ul{
+    list-style: none;
+    position: relative;
+}
+.bannerTop_r ul li{
+    float: left;
+    margin-left: 36px;
+    margin: 13px 0 0 36px;
+    font-family:  microsoft yahei;
+}
+.bannerTop_r .first{
+    color:#E40077;
+}
+.bannerTop_r .icon_hot{
+    display: block;
+    width: 37px;
+    height: 21px;
+    background: url(../images/icon.png) no-repeat -110px -360px;
+    position: absolute;
+    top:-3px;
+    left: 500px;
+}
+
+/*banner开始*/
+.banner{
+    width: 1200px;
+    height: 489px;
+}
+.banner .banner_l{
+    float: left;
+    width: 225px;
+    height: 489px;
+    background-color: #BB0059;
+}
+.banner_l ul{
+    list-style: none;
+}
+.banner_l ul li {
+    width: 100%;
+    /*height: 35px;*/
+    line-height: 35px;
+    font:12px/35px "microsoft yahei";
+    color: #fff;
+    margin-left: 14px;
+    /*position: relative;*/
+}
+.banner_l ul li span{
+    display: block;
+    float: right;
+    margin-right: 25px;
+    width: 16px;
+    height: 18px;
+    font-family: "sumsun";
+    /*position: absolute;
+    top:0;
+    right:25px;*/
+}
+.banner_m{
+    float: left;
+    margin: 5px 0 0 5px;
+}
+#inBox{
+    height: 440px;
+    width: 1500px;
+}
+.slider {
+    width: 747px;
+    height: 439px;
+    overflow: hidden;
+    position: relative;
+}
+.slider img{
+    width: 748px;
+    height: 440px;
+    float: left;
+}
+.scroll-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider ul{
+    list-style: none;
+    position: absolute;
+    bottom:10px;
+    left:50%;
+}
+.slider ul li{
+    float: left;
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #dda0dd;
+    text-align: center;
+    cursor:pointer;
+}
+.slider ul .current{
+    background-color: yellow;
+}
+.slider_bottom {
+    height: 45px;
+    width: 747px;
+}
+.slider_bottom ul li {
+    float: left;
+    margin-left: 15px;
+    font:400 14px/45px "microsoft yahei"
+}
+.slider_bottom ul .lipink{
+    color:#BB0059;
+    font-weight: 700;
+}
+.banner .banner_r{
+    height: 480px;
+    width: 219px;
+    border: 1px solid #E8E8E8;
+    float: right;
+    margin-top: 5px;
+}
+.banner_r_t{
+    width:100%;
+    height: 35px;
+    font:14px/35px "microsoft yahei";
+}
+.banner_r_t em{
+    float: left;
+    margin-left: 15px;
+}
+.banner_r_t span{
+    font-family: SimSun;
+    font-size: 13px;
+    float: right;
+    margin-right: 10px;
+}
+.banner_r_m{
+    width:100%;
+    height: 220px;
+}
+.banner_r_m .line_m{
+    display: block;
+    width: 197px;
+    height: 1px;
+    background-color: #E8E8E8;
+    margin-left: 15px;
+}
+.banner_r_m p{
+
+    height: 23px;
+    color: #f00;
+    font-size: 13px;
+    font-family:"microsoft yahei" ;
+    margin-left: 15px;
+}
+.banner_r_m .block{
+    color: #000;
+}
+.banner_r_m .banner_first{
+    margin-top: 18px;
+}
+.banner_r_b{
+    height: 225px;
+    margin-bottom: 0;
+}
+
+.banner_r_b ul li{
+    float: left;
+    width: 72px;
+    height: 75px;
+    border: 1px solid #E8E8E8;
+    border-right:none;
+    border-bottom: none;
+    text-align:center;
+}
+.banner_r_b ul li img{
+    padding:12px 20px 0 20px;
+}
+.banner_r_b .lifirst{
+    border-left: none;
+}
+
+/*头部结束*/
+
+.footer{
+    border-top:1px solid #D8D8D8;
+    border-bottom:1px solid #D8D8D8;
+    height:138px;
+    padding: 20px 0 20px 0;
+}
+.footer .box1{
+    width: 238px;
+    border-right:1px solid #D8D8D8;
+    float: left;
+    position: relative;
+}
+.box1 .footer-icon{
+    display:block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon.png) no-repeat 0 -60px;
+    position: absolute;
+    top: 5px;
+    left: 32px;
+}
+.box1 .new,
+.box2 .new1,
+.box3 .new2,
+.box4 .new3,
+.box5 .new4{
+    margin-top:0;
+    margin-left: 88px;
+}
+.box1 .new h3,
+.box2 h3,
+.box3 h3,
+.box4 h3,
+.box5 h3{
+    font:700 18px/30px "Microsoft yahei";
+}
+.box1 .new span,
+.box2 span,
+.box3 span,
+.box4 span,
+.box5 span{
+    font:400 12px/24px "Microsoft yahei";
+}
+.footer .box2{
+    width: 238px;
+    float: left;
+    border-right:1px solid #D8D8D8;
+    position: relative;
+}
+.box2 .footer-icon1{
+    display:block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon.png) no-repeat -50px -110px;
+    position: absolute;
+    top: 5px;
+    left: 32px;
+}
+.footer .box3{
+    width: 238px;
+    float: left;
+    border-right:1px solid #D8D8D8;
+    position: relative;
+}
+.box3 .footer-icon2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon.png) no-repeat -50px -60px;
+    position: absolute;
+    top: 5px;
+    left: 32px;
+}
+.footer .box4{
+    width: 238px;
+    float: left;
+    border-right:1px solid #D8D8D8;
+    position: relative;
+}
+.box4 .footer-icon3 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon.png) no-repeat 0 -110px;
+    position: absolute;
+    top: 5px;
+    left: 32px;
+}
+.footer .box5{
+    width: 238px;
+    float: left;
+    position: relative;
+}
+.box5 .footer-icon4 {
+    display: block;
+    width: 43px;
+    height: 40px;
+    background: url(../images/icon.png) no-repeat -100px -60px;
+    position: absolute;
+    top: 5px;
+    left: 32px;
+}
+.help{
+    padding: 48px 0 36px 0;
+}
+.help ul{
+    margin-left: 372px;
+    position: relative;
+}
+.help ul .current{
+    display:block;
+    width: 14px;
+    height: 18px;
+    background: url(../images/icon.png) no-repeat -110px 0;
+    position: absolute;
+    top:-2px;
+    left:-8px;
+}
+.help ul li{
+    float: left;
+    font:400 12px/14px "Microsoft yahei";
+    border-right:1px solid #D8D8D8;
+    padding:0 10px 0 10px;
+}
+
+

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>应用程序标签</title>
+</head>
+<body>
+<!-- 数据列表呈现出来需要载体 -->
+<input type="text" list="input_list">
+<datalist id="input_list">
+  <option value="任"></option>
+  <option value="张"></option>
+</datalist>
+</body>
+</html>
